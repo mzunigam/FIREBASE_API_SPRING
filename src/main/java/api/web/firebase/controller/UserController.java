@@ -31,13 +31,19 @@ public class UserController {
 
 	@GetMapping(value = "findall")
 	public List<UserDTO> getAll() throws Exception {
-
 		return userApi.getAll();
 	}
-    
+
 	@GetMapping(value = "/find/{id}")
 	public UserDTO find(@PathVariable String id) throws Exception {
-		return userApi.get(id);
+		List<UserDTO> users = userApi.getAll();
+		for (UserDTO user : users) {
+			if (user.getUsuario().equals(id)) {
+				System.out.println(user.toString());
+				return user;
+			}
+		}
+		return null;
 	}
 
 	@GetMapping(value = "/delete/{id}")
