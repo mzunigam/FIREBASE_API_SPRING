@@ -15,7 +15,7 @@
 	<name>firebase</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<!-- <java.version>11</java.version> -->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -45,7 +45,11 @@
 			<artifactId>firebase-admin</artifactId>
 			<version>6.11.0</version>
 		</dependency>
-
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.4</version>
+		</dependency>
 	</dependencies>
 
 	<build>
