@@ -6,12 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import com.google.api.core.ApiFuture;
-import com.google.cloud.firestore.Firestore;
-import com.google.cloud.firestore.WriteResult;
-import com.google.firebase.cloud.FirestoreClient;
-
 import api.web.firebase.model.User;
 import api.web.firebase.model.UserDTO;
 import api.web.firebase.service.UserApi;
@@ -57,6 +51,5 @@ public class UserController {
 
 		return new ResponseEntity<UserDTO>(user, HttpStatus.OK);
 	}
-
-
+	
 }
