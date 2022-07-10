@@ -6,6 +6,5 @@ import api.web.firebase.common.GenericServiceAPI;
 import api.web.firebase.model.User;
 import api.web.firebase.model.UserDTO;
 
-@Repository
 public interface UserApi extends GenericServiceAPI<User, UserDTO> {
 }

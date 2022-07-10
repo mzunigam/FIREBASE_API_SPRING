@@ -1,5 +1,6 @@
 package api.web.firebase.common;
 
+import java.io.Console;
 import java.lang.reflect.ParameterizedType;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,6 +55,7 @@ public abstract class GenericServiceImpl<I, O> implements GenericServiceAPI<I, O
 		}
 		return null;
 	}
+	
 
 	@Override
 	public List<O> getAll() throws Exception {

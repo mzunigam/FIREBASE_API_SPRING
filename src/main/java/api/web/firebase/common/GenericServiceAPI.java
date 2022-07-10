@@ -16,4 +16,6 @@ public interface GenericServiceAPI<I,O> {
 	Map<String, Object> getAsMap(String id) throws Exception;
 	
 	List<O> getAll() throws Exception;
+
+	
 }
