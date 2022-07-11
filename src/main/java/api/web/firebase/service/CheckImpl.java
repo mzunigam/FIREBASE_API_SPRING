@@ -18,7 +18,7 @@ public class CheckImpl extends GenericServiceImpl<Check, CheckDTO> implements Ch
 
     @Override
     public CollectionReference getCollection() {
-        return firestore.collection("reports");
+        return firestore.collection("checks");
     }
     
 }
