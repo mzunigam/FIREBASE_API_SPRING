@@ -22,7 +22,7 @@ public class AppController {
                     throws Exception {
                 arg2.getWriter().write("API FIREBASE WITH SPRING\n");
                 arg2.getWriter().write("-------------------------\n");
-                arg2.getWriter().write("Entities : /user/api/, /report/api/, /check/api/ \n");
+                arg2.getWriter().write("Entities : api/user, api/report, api/check \n");
                 arg2.getWriter().write("-------------------------\n");
                 arg2.getWriter().write("/api/save/null to save a new object\n");
                 arg2.getWriter().write("/api/save/{id} to update an object\n");
