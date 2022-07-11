@@ -12,7 +12,7 @@ import api.web.firebase.service.UserApi;
 
 
 @RestController
-@RequestMapping("api")
+@RequestMapping("api/user")
 @CrossOrigin("*")
 public class UserController {
 
@@ -29,7 +29,7 @@ public class UserController {
 		return new ResponseEntity<String>(id, HttpStatus.OK);
 	}
 
-	@GetMapping(value = "findall")
+	@GetMapping(value = "/findall")
 	public List<UserDTO> getAll() throws Exception {
 		return userApi.getAll();
 	}

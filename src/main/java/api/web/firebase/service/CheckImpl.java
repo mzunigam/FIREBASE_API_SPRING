@@ -7,18 +7,18 @@ import com.google.cloud.firestore.CollectionReference;
 import com.google.cloud.firestore.Firestore;
 
 import api.web.firebase.common.GenericServiceImpl;
-import api.web.firebase.model.User;
-import api.web.firebase.model.UserDTO;
+import api.web.firebase.model.Check;
+import api.web.firebase.model.CheckDTO;
 
 @Service
-public class UserImpl extends GenericServiceImpl<User, UserDTO> implements UserApi {
+public class CheckImpl extends GenericServiceImpl<Check, CheckDTO> implements CheckApi {
 
     @Autowired
     private Firestore firestore;
 
     @Override
     public CollectionReference getCollection() {
-        return firestore.collection("users");
+        return firestore.collection("reports");
     }
-
+    
 }
