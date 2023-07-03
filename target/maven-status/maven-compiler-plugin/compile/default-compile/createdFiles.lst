@@ -1,0 +1,15 @@
+api/web/firebase/service/UserImpl.class
+api/web/firebase/model/ProductoDTO.class
+api/web/firebase/config/FirebaseConfig.class
+api/web/firebase/model/Producto.class
+api/web/firebase/model/User.class
+api/web/firebase/common/GenericServiceImpl.class
+api/web/firebase/ServletInitializer.class
+api/web/firebase/service/ProductoImpl.class
+api/web/firebase/controller/UserController.class
+api/web/firebase/model/UserDTO.class
+api/web/firebase/FirebaseApplication.class
+api/web/firebase/controller/ProductoController.class
+api/web/firebase/common/GenericServiceAPI.class
+api/web/firebase/service/UserApi.class
+api/web/firebase/service/ProductoApi.class

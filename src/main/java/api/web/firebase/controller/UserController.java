@@ -48,7 +48,7 @@ public class UserController {
 		return null;
 	}
 
-	@GetMapping(value = "/delete/{id}")
+	@DeleteMapping(value = "/delete/{id}")
 	public ResponseEntity<UserDTO> delete(@PathVariable String id) throws Exception {
 		UserDTO user = userApi.get(id);
 		if (user != null) {

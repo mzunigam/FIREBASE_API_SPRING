@@ -23,4 +23,24 @@ public class ProductoController {
         return productoApi.getAll();
     }
 
+    @GetMapping(value = "/find/{id}")
+    public ProductoDTO getById(@PathVariable("id") String id) throws Exception {
+        return productoApi.get(id);
+    }
+
+    @PostMapping(value = "/save")
+    public String save(@RequestBody String productoDTO) throws Exception {
+        return productoApi.save(null, productoDTO);
+    }
+
+    @PutMapping(value = "/update")
+    public String update(@RequestBody String productoDTO) throws Exception {
+        return productoApi.save(null, productoDTO);
+    }
+
+    @DeleteMapping(value = "/delete/{id}")
+    public void delete(@PathVariable("id") String id) throws Exception {
+        productoApi.delete(id);
+    }
+
 }
