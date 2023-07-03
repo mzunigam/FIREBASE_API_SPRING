@@ -5,7 +5,5 @@ import api.web.firebase.model.Producto;
 import api.web.firebase.model.ProductoDTO;
 
 public interface ProductoApi extends GenericServiceAPI<Producto, ProductoDTO> {
-
-
     
 }

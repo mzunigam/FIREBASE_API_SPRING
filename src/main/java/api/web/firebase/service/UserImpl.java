@@ -18,7 +18,7 @@ public class UserImpl extends GenericServiceImpl<User, UserDTO> implements UserA
 
     @Override
     public CollectionReference getCollection() {
-        return firestore.collection("users");
+        return firestore.collection("User");
     }
 
 }

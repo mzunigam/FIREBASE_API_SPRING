@@ -1,9 +1,22 @@
 package api.web.firebase.config;
 
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.stream.Collectors;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.firestore.Firestore;
 import com.google.firebase.FirebaseApp;
@@ -16,8 +29,18 @@ public class FirebaseConfig {
     @Bean
     public Firestore firestore() throws IOException {
 
-        FileInputStream serviceAccount = new FileInputStream("./serviceAccountKey.json");
-
+        ClassPathResource resource = new ClassPathResource("serviceAccountKey.json");
+        InputStream inputStream = resource.getInputStream();
+        File tempFile = File.createTempFile("temp-", ".json");
+        try (OutputStream outputStream = new FileOutputStream(tempFile)) {
+            byte[] buffer = new byte[4096];
+            int bytesRead;
+            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                outputStream.write(buffer, 0, bytesRead);
+            }
+        }
+        FileInputStream serviceAccount = new FileInputStream(tempFile);
+        tempFile.delete();
         FirebaseOptions options = new FirebaseOptions.Builder()
                 .setCredentials(GoogleCredentials.fromStream(serviceAccount))
                 .build();

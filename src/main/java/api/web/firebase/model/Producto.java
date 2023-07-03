@@ -1,33 +1,43 @@
 package api.web.firebase.model;
 
 public class Producto {
-    
-    private String nombre;
-    private String precio;
-    private String fecha;
+    String nombre,descripcion,imagen;
+    Double precio;
+    int stock;
 
+    
+    public Producto() {
+    }
+
+    
     public String getNombre() {
         return nombre;
     }
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public String getPrecio() {
+    public String getDescripcion() {
+        return descripcion;
+    }
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+    public String getImagen() {
+        return imagen;
+    }
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+    public Double getPrecio() {
         return precio;
     }
-    public void setPrecio(String precio) {
+    public void setPrecio(Double precio) {
         this.precio = precio;
     }
-    public String getFecha() {
-        return fecha;
+    public int getStock() {
+        return stock;
     }
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setStock(int stock) {
+        this.stock = stock;
     }
-    
-    public Producto() {
-    }
-
-    
-
 }
