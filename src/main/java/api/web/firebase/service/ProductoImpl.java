@@ -11,14 +11,14 @@ import api.web.firebase.model.Producto;
 import api.web.firebase.model.ProductoDTO;
 
 @Service
-public class ProductoImpl extends GenericServiceImpl<Producto, ProductoDTO> implements ProductoApi {
-    
+public class ProductoImpl extends GenericServiceImpl<Producto, ProductoDTO> implements ProductoApi{
+
     @Autowired
     private Firestore firestore;
 
     @Override
     public CollectionReference getCollection() {
-        return firestore.collection("productos");
+        return firestore.collection("Producto");
     }
-    
+
 }
