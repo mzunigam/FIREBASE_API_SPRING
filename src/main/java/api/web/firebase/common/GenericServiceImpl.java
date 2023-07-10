@@ -1,6 +1,5 @@
 package api.web.firebase.common;
 
-import java.io.Console;
 import java.lang.reflect.ParameterizedType;
 import java.util.ArrayList;
 import java.util.List;

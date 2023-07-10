@@ -1,0 +1,15 @@
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/config/FirebaseConfig.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/model/User.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/model/ProductoDTO.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/common/GenericServiceAPI.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/model/UserDTO.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/FirebaseApplication.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/common/GenericServiceImpl.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/controller/UserController.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/service/UserImpl.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/service/UserApi.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/service/ProductoApi.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/controller/ProductoController.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/service/ProductoImpl.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/ServletInitializer.java
+/home/sistem27user/Escritorio/FIREBASE-API-SPRING/src/main/java/api/web/firebase/model/Producto.java
